@@ -11,7 +11,7 @@ const StateCard = ({ data }: StateCardProps) => {
     return (
         <motion.div
             className="bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center"
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ scale: 1.05, y: -5 }} //Efeito para o Houver
             transition={{ type: "spring", stiffness: 300 }}
         >
             <h3 className="text-2xl font-bold text-emerald-400">{data.estado}</h3>
