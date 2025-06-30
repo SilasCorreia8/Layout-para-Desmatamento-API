@@ -11,17 +11,17 @@ const Header = () => {
         </h1>
         <ul className="hidden space-x-8 md:flex">
           <li>
-            <a href="#inicio" className="text-brand-text-muted hover:text-brand-text transition-colors">
+            <a href="#inicio" className="text-brand-text-muted hover:text-emerald-400 transition-colors">
               Início
             </a>
           </li>
           <li>
-            <a href="#dados" className="text-brand-text-muted hover:text-brand-text transition-colors">
+            <a href="#dados" className="text-brand-text-muted hover:text-emerald-400 transition-colors">
               Dados
             </a>
           </li>
           <li>
-            <a href="#sobre" className="text-brand-text-muted hover:text-brand-text transition-colors">
+            <a href="#sobre" className="text-brand-text-muted hover:text-emerald-400 transition-colors">
               Sobre
             </a>
           </li>

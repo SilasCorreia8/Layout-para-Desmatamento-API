@@ -44,8 +44,7 @@ export default async function Home() {
           </p>
           <a
             href="#dados"
-            className="bg-brand-secondary text-brand-background shadow-brand-secondary/20 mt-10 inline-block transform rounded-lg px-8 py-3 font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-yellow-400"
-          >
+            className="bg-brand-secondary text-brand-background shadow-brand-secondary/20 mt-10 inline-block transform rounded-lg px-8 py-3 font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-emerald-400">
             Explorar Dados
           </a>
         </section>
