@@ -9,21 +9,23 @@ interface StateCardProps {
 
 const StateCard = ({ data }: StateCardProps) => {
     return (
-        <motion.div
-            className="bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center"
-            whileHover={{ scale: 1.05, y: -5 }} //Efeito para o Houver
-            transition={{ type: "spring", stiffness: 300 }}
-        >
-            <h3 className="text-2xl font-bold text-emerald-400">{data.regiao}</h3>
-            <p className="text-gray-400 mt-1">Ano: {data.ano}</p>
-            <div className="mt-4">
-                <p className="text-4xl font-light">
-                {data.areaDesmatada.toLocaleString('pt-BR')}
-                </p>
-                <p className="text-sm text-gray-500">km² desmatados</p>
-            </div>
-        </motion.div>
-    );
+        <div className="group relative bg-brand-surface rounded-lg p-6 shadow-lg border border-gray-700 transition-all duration-300 hover:border-brand-primary hover:-translate-y-1">
+      <div className="relative z-10">
+        <h3 className="text-2xl font-semibold text-brand-primary">
+          {data.regiao}
+        </h3>
+        <p className="text-brand-text-muted mt-1">Ano: {data.ano}</p>
+        <div className="mt-6">
+          <p className="text-5xl font-bold text-brand-text">
+            {data.areaDesmatada.toLocaleString('pt-BR')}
+          </p>
+          <p className="text-sm text-brand-text-muted uppercase tracking-wider mt-1">
+            km² desmatados
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default StateCard;
