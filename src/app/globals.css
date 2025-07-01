@@ -3,3 +3,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
+
+body.menu-open > main {
+  filter: blur(10px);
+  transition: filter 0.3s ease-in-out;
+  pointer-events: none;
+  user-select: none;
+}
