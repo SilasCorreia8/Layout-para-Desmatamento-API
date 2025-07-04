@@ -39,8 +39,8 @@ export default async function Home() {
             O Futuro da Floresta <br /> em Nossas Mãos
           </h1>
           <p className="text-brand-text-muted mx-auto mt-6 max-w-2xl text-lg">
-            Uma análise interativa sobre os dados de desmatamento reportados no
-            último ano nos biomas brasileiros.
+            Uma análise interativa sobre os dados de desmatamento reportados nos
+            últimos anos nos biomas brasileiros.
           </p>
           <a
             href="#dados"
