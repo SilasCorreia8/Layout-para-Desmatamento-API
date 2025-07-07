@@ -1,5 +1,7 @@
 # Amazônia em Foco: Landing Page de Dados sobre Desmatamento
 
+![image alt](https://github.com/SilasCorreia8/Layout-para-Desmatamento-API/blob/main/Landing%20Page.png?raw=true)
+
 ## 📖 Sobre o Projeto
 
 Esta é uma landing page moderna e interativa, desenvolvida como parte do Módulo 5 do curso [Programadores do Amanhã](https://programadoresdoamanha.org.br/pt). O objetivo é demonstrar habilidades de desenvolvimento front-end consumindo uma API local para exibir dados sobre o desmatamento em biomas brasileiros.
