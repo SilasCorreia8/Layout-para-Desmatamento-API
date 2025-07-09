@@ -9,7 +9,12 @@ interface StateCardProps {
 
 const StateCard = ({ data }: StateCardProps) => {
   return (
-    <div className="group bg-brand-surface hover:border-brand-primary relative rounded-lg border border-gray-700 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }} // Estado inicial: invisível e 20px para baixo
+      animate={{ opacity: 1, y: 0 }}   // Estado final: visível e na posição original
+      transition={{ duration: 0.5 }}   // Duração da animação
+      className="group bg-brand-surface hover:border-brand-primary relative rounded-lg border border-gray-700 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1"
+    >
       <div className="relative z-10">
         <h3 className="text-brand-primary text-2xl font-semibold">
           {data.regiao}
@@ -24,7 +29,7 @@ const StateCard = ({ data }: StateCardProps) => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
