@@ -79,3 +79,4 @@ npm run dev -- -p 3001
 
 - **[LinkedIn](https://www.linkedin.com/in/silascorreia/)**
 - **[Post do projeto no LinkedIn](https://www.linkedin.com/posts/silascorreia_amaz%C3%B4nia-em-foco-uma-landing-page-interativa-activity-7348670824255578112-uuyz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETOfxgBm7BO5qwOzIf_uQHf1Qw9cV_Qs04)**
+- **[Deploy](https://layout-para-desmatamento-api.netlify.app/)**
