@@ -6,12 +6,22 @@ import { DeforestationData } from '@/types/DeforestationData';
 // Função para buscar os dados da API local. Next.js vai executar isso no servidor.
 async function getDeforestationData(): Promise<DeforestationData[]> {
   try {
-    // Usa a URL da API que está rodando na porta 3000
-    const res = await fetch('http://localhost:3000/desmatamento', {
-      cache: 'no-store',
+    // Usa a URL da API
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    if (!apiUrl) {
+      throw new Error("A variável de ambiente NEXT_PUBLIC_API_URL não está definida.");
+    }
+    
+    const res = await fetch(apiUrl, {
+      // O Next.js buscar novos dados a cada 1 hora.
+      next: { revalidate: 3600 },
     });
 
-    if (!res.ok) return [];
+    if (!res.ok) {
+      console.error('Falha ao buscar dados da API:', res.status, res.statusText);
+      return [];
+    }
 
     const jsonData = await res.json();
     return Array.isArray(jsonData) ? jsonData : jsonData.desmatamento || []; // Retorna o array de dados
