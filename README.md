@@ -44,7 +44,7 @@ Para executar este projeto localmente, você precisará de ter dois terminais ab
 
 ### 1. Back-end (API)
 
-Primeiro, vamos iniciar o servidor que irá fornecer os dados. [Repositório da API](https://github.com/SilasCorreia8/Layout-para-Desmatamento-API.git)
+Primeiro, vamos iniciar o servidor que irá fornecer os dados. [Repositório da API](https://github.com/SilasCorreia8/Desmatamento-API.git)
 
 ```bash
 # 1. Clone o repositório (se ainda não o fez)
@@ -76,3 +76,6 @@ npm install
 # A flag -p 3001 garante que ele não entre em conflito com a API que está rodando na porta 3000
 npm run dev -- -p 3001
 ```
+
+- **[LinkedIn](https://www.linkedin.com/in/silascorreia/)**
+- **[Post do projeto no LinkedIn](https://www.linkedin.com/posts/silascorreia_amaz%C3%B4nia-em-foco-uma-landing-page-interativa-activity-7348670824255578112-uuyz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETOfxgBm7BO5qwOzIf_uQHf1Qw9cV_Qs04)**
